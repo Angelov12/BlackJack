@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="shortcut icon" href="assets/imgs/Favicon/blackjack-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="fondo-titulo" >
+       <h1 class="titulo" >BlackJack</h1> 
+    </header>
+    <section class="area-btns">
+            <button id="btn-nuevo-juego" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btn-pedir-carta" class="btn btn-primary">Pedir carta</button>
+            <button id="btn-detener" class="btn btn-primary">Detener</button>
+    </section>
+    <main class="main">
+        <section class="contenedor-cartas">
+            <div class="titulo-cartas">
+                <h2>Jugador 1 - <span>0</span></h2>
+            </div>
+                <div id="jugador-cartas">
+    
+        </section>
+        <section class="contenedor-cartas">
+            <div class="titulo-cartas">
+                <h2>Computadora 1 - <span>0</span></h2>
+            </div>
+                <div id="computadora-cartas">
+        </section>
+    </main>
+
+    <script src="assets/js/underscore-umd.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>
+</html>

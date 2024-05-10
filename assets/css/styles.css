@@ -1,0 +1,85 @@
+:root{
+    --colorDeFondo: #2F4F30;
+    --colorDefondoTitulo: #000;
+    --coloDeFuente: #fff;
+    --colorDeBotones1: #c82333;
+    --colorDeBotones2: #0069d9;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+  }
+body{
+    background-color: var(--colorDeFondo);
+    color: var(--coloDeFuente);
+}
+.fondo-titulo{
+    
+    background-color: var(--colorDefondoTitulo);
+}
+
+.titulo{
+    text-align: center;
+    color: var(--coloDeFuente);
+    padding: 20px;
+    margin: 0;
+    font-size: 25px;
+}
+.area-btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+}
+#btn-nuevo-juego,#btn-pedir-carta,#btn-detener{
+    padding: 10px;
+    width: 120px;
+    background-color: var(--colorDeBotones1);
+    color: var(--coloDeFuente);
+    border: none;
+    border-radius: 5px;
+}
+#btn-pedir-carta,#btn-detener{
+    background-color: var(--colorDeBotones2);
+}
+button:disabled{
+    opacity: 0.5;
+}
+button:enabled{
+    opacity: ;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+.contenedor-cartas{
+    width: 300px;
+}
+.carta{
+    position: relative;
+    left: 100px;
+    margin-left: -75px;
+    width: 120px;
+}
+#computadora-cartas, #jugador-cartas{
+    height: 240px;
+}
