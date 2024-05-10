@@ -91,7 +91,7 @@
           alert("La computadora gana");
         }else alert("El jugador gana");
       }
-    }, "100");
+    }, 140);
   };
 
   btnPedirCarta.addEventListener("click", () => {
